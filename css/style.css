@@ -1,0 +1,128 @@
+/* style.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 高さを100vhに調整 */
+  overflow-y: auto; /* コンテンツが溢れたときにスクロール可能にする */
+}
+
+.input-section {
+  overflow-y: auto;
+  max-height: 30%; /* 入力セクションの高さを調整 */
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #555555;
+}
+
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+button {
+  background-color: #8e24aa;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #6a1b9a;
+}
+
+#output, #enhancements {
+  flex-grow: 1;
+  margin-top: 20px;
+  overflow-y: auto; /* 縦スクロールを許可 */
+  border-top: 1px solid #eeeeee;
+  padding-top: 10px;
+}
+
+.recorded-content {
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 10px;
+}
+
+.recorded-content p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+      max-width: 100%;
+      padding: 15px;
+      height: 90vh; /* スマホ画面の高さに対応 */
+  }
+
+  button {
+      font-size: 1em;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.3em;
+  }
+}

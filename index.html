@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面接結果記録アプリ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>面接結果記録</h1>
+    <div class="container">
+        <div class="input-section">
+            <div class="input-group">
+                <label for="category">記録する枠を選択してください:</label>
+                <select id="category">
+                    <option value="背景">背景</option>
+                    <option value="現時点までの体調">現時点までの体調</option>
+                    <option value="現時点までの対応">現時点までの対応</option>
+                    <option value="現状">現状</option>
+                    <option value="今後の対応・提案">今後の対応・提案</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="conversation">会話内容:</label>
+                <textarea id="conversation" placeholder="会話内容を入力してください"></textarea>
+            </div>
+            <button id="start-conversation">会話を開始</button>
+            <button id="record-conversation">記録</button>
+        </div>
+        <div id="output" class="output">
+            <h2>記録内容</h2>
+            <div id="recorded-content"></div>
+        </div>
+        <div id="enhancements" class="output">
+            <h2>質問の自動生成</h2>
+            <div id="question-generation"></div>
+            <h2>リアルタイム分析とフィードバック</h2>
+            <div id="real-time-analysis"></div>
+            <h2>自動要約</h2>
+            <div id="auto-summary"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
