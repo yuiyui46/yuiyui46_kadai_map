@@ -34,8 +34,13 @@ h1 {
 
 .input-section {
   overflow-y: auto;
-  max-height: 30%; /* 入力セクションの高さを調整 */
+  max-height: 50%; /* 入力セクションの高さを調整 */
   margin-bottom: 20px;
+}
+
+.spacer {
+  flex-grow: 1;
+  height: 20px; /* 任意の高さに調整 */
 }
 
 .input-group {
@@ -89,8 +94,8 @@ button:hover {
 
 #output, #enhancements {
   flex-grow: 1;
-  margin-top: 20px;
-  overflow-y: auto; /* 縦スクロールを許可 */
+  margin-top: 20px; /* 縦スクロールを許可 */
+  overflow-y: auto;
   border-top: 1px solid #eeeeee;
   padding-top: 10px;
 }
